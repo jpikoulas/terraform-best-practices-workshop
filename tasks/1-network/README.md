@@ -14,6 +14,7 @@ Integrate VPC with other resources (eg., autoscaling, security group).
 1. Using [terraform-aws-vpc module](https://github.com/terraform-aws-modules/terraform-aws-vpc/) create VPC for the real scenario (eg, 3 public subnets, 3 private subnets, single NAT gateway).
 1. Using [terraform-aws-autoscaling module](https://github.com/terraform-aws-modules/terraform-aws-autoscaling/) create an autoscaling group which will always have 1 EC2 instance running in public subnet. Install and run `nginx` service when instance starts.
 1. Using [terraform-aws-security-group module](https://github.com/terraform-aws-modules/terraform-aws-security-group/) create a security group for EC2 instances where HTTP and SSH ports are open.
+1. Use the above nginx to work as reverse proxy for grafana public facing(boss)
 
 
 ## Solutions
